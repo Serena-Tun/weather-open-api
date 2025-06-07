@@ -6,16 +6,24 @@
   <title>Open Weather API</title>
   <link rel="stylesheet" href="index.css" />
 </head>
+
 <body>
   <h1>Weather App</h1>
 
+  <input type="text" id="locationInput" placeholder="Enter State or ZIP code" />
+  <button id="searchBtn">Search</button>
+
   <section id="weather">
     <h2>Current Weather</h2>
+    <p id="locationName"></p>
     <p id="temp"></p>
     <p id="wind"></p>
   </section>
 
+  <section id="forecast">
+    <h2>10-Day Forecast</h2>
+    <div id="forecastData"></div>
+  </section>
+
   <script src="index.js"></script>
 </body>
-</html>
-
